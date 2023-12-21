@@ -6,10 +6,12 @@ Food Category : Thai Japanese Korean Chinese Indian Western Drink Dessert
 
 Develop on Android studio by Java langauge
 
-Developer list
-
+Developer 
 - Kamonchanok Klayjinda
 
-UX/UI Designer list
-
+UX/UI Designers
+- Benyapa Sanguansin
+- Kamonchanok Klayjinda
+- Natkritta Poonkham
 - Sornsawan Charoenkitapha
+- Thanisara Saengpiku
