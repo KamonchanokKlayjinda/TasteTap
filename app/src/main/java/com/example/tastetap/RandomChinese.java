@@ -79,7 +79,9 @@ public class RandomChinese extends AppCompatActivity {
         yes_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                addEvent(randomName,randomCal);
+                if(randomName != null) {
+                    addEvent(randomName, randomCal);
+                }
             }
         });
     }
