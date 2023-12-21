@@ -57,7 +57,7 @@ public class HistoryView extends AppCompatActivity {
             map = new HashMap<String, String>();
             map.put("Id", String.valueOf(cursor.getLong(0)));
             map.put("Name", cursor.getString(1));
-            map.put("Calories", cursor.getString(2));
+            map.put("Calories", cursor.getString(2)+ "\t\t\tkcal");
             MyArrList.add(map);
         }
         SimpleAdapter sAdap;

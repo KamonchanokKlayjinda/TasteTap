@@ -16,6 +16,7 @@
     //History
     <string name="reset">RESET</string>
     <string name="history_name">TasteTap History</string>
+    <string name="cal">kCal</string>
 
     //Column
     <string name="row_time">TIME</string>
