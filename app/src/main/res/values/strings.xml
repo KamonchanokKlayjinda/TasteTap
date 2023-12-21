@@ -20,8 +20,9 @@
     //Column
     <string name="row_time">TIME</string>
     <string name="row_name">NAME</string>
-    <string name="row_category">CATEGORY</string>
+    <string name="row_id">ID</string>
     <string name="row_cal">CALORIES</string>
+    <string name="row_category">CATEGORY</string>
 
     //Main class
     <string name="choose_random">CHOOSE RANDOM</string>
