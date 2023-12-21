@@ -1,11 +1,8 @@
 package com.example.tastetap;
 
 import static android.provider.BaseColumns._ID;
-
 import static com.example.tastetap.ConstantsHistoryDB.COL_CAL;
-import static com.example.tastetap.ConstantsHistoryDB.COL_CATEGORY;
 import static com.example.tastetap.ConstantsHistoryDB.COL_NAME;
-import static com.example.tastetap.ConstantsHistoryDB.COL_TIME;
 import static com.example.tastetap.ConstantsHistoryDB.TABLE_NAME;
 
 import android.content.Context;
@@ -21,10 +18,8 @@ public class HistoryDB extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("CREATE TABLE " + TABLE_NAME + " ("
                 + _ID +" INTEGER PRIMARY KEY AUTOINCREMENT, "
-                + COL_TIME + " INTEGER, "
-                + COL_NAME + " INTEGER NOT NULL, "
-                + COL_CATEGORY + " INTEGER NOT NULL, "
-                + COL_CAL + " TEXT NOT NULL);"  );
+                + COL_NAME + " TEXT, "
+                + COL_CAL + " TEXT);"  );
     }
 
     @Override

@@ -1,8 +1,14 @@
 package com.example.tastetap;
 
+import static com.example.tastetap.ConstantsHistoryDB.COL_CAL;
+import static com.example.tastetap.ConstantsHistoryDB.COL_NAME;
+import static com.example.tastetap.ConstantsHistoryDB.TABLE_NAME;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.ContentValues;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.os.Build;
 import android.os.Bundle;
@@ -22,8 +28,9 @@ public class RandomThai extends AppCompatActivity {
     ImageView foodPic;
     Window window;
     TextView result_txt;
-    Button random_btn;
+    Button random_btn, yes_btn;
     FoodDB foodDB;
+    HistoryDB historyDB;
     private ArrayList<String> nameList;
     private ArrayList<Integer> calList;
     private ArrayList<Bitmap> imageList;
@@ -51,6 +58,9 @@ public class RandomThai extends AppCompatActivity {
             e.printStackTrace();
         }
 
+        historyDB = new HistoryDB(this);
+        yes_btn = findViewById(R.id.yes_button);
+
         random_btn = findViewById(R.id.random_button);
         result_txt = findViewById(R.id.result_random);
         foodPic = findViewById(R.id.food_view);
@@ -62,6 +72,13 @@ public class RandomThai extends AppCompatActivity {
                 calList = foodDB.fetchThaiCal();
                 imageList = foodDB.getThaiImage();
                 displayRandomFood();
+            }
+        });
+
+        yes_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addEvent(randomName,randomCal);
             }
         });
     }
@@ -103,5 +120,13 @@ public class RandomThai extends AppCompatActivity {
     public Bitmap getRandomImage(){
         randomImage = imageList.get(randomIndex);
         return randomImage;
+    }
+
+    public void addEvent(String name, String cal) {
+        SQLiteDatabase db = historyDB.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(COL_NAME, name);
+        values.put(COL_CAL, cal);
+        db.insert(TABLE_NAME, null, values);
     }
 }

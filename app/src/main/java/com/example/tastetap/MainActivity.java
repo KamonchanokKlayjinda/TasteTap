@@ -1,5 +1,4 @@
 package com.example.tastetap;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
@@ -13,6 +12,7 @@ import android.view.Window;
 public class MainActivity extends AppCompatActivity  {
     CardView category,all,history;
     Window window;
+    HistoryDB historyDB;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity  {
             window=getWindow();
             window.setStatusBarColor(this.getResources().getColor(R.color.my_primary));
         }
+        historyDB = new HistoryDB(this);
 
         category = findViewById(R.id.CategoryLayout);
         all = findViewById(R.id.AllLayout);
@@ -52,6 +53,7 @@ public class MainActivity extends AppCompatActivity  {
                 startActivity(intent);
             }
         });
+
     }
 
 }
