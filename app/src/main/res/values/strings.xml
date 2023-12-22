@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">TasteTap</string>
+
+    //Toolbar
+    <string name="all_tool">ALL FOODS</string>
+    <string name="thai_tool">THAI FOODS</string>
+    <string name="japanese_tool">JAPANESE FOODS</string>
+    <string name="korean_tool">KOREAN FOODS</string>
+    <string name="chinese_tool">CHINESE FOODS</string>
+    <string name="indian_tool">INDIAN FOODS</string>
+    <string name="western_tool">WESTERN FOODS</string>
+    <string name="drink_tool">DRINK</string>
+    <string name="dessert_tool">DESSERT</string>
+    <string name="history_tool">HISTORY</string>
+
+    //History
+    <string name="reset">RESET</string>
+    <string name="history_name">TasteTap History</string>
+    <string name="cal">kCal</string>
+
+    //Column
+    <string name="row_time">TIME</string>
+    <string name="row_name">NAME</string>
+    <string name="row_id">ID</string>
+    <string name="row_cal">CALORIES</string>
+    <string name="row_category">CATEGORY</string>
+
+    //Main class
+    <string name="choose_random">CHOOSE RANDOM</string>
+    <string name="all_txt">ALL</string>
+    <string name="category_txt">CATEGORY</string>
+    <string name="history_txt">HISTORY</string>
+
+    //Random page
+    <string name="TasteTap">TasteTap</string>
+    <string name="app_random_button">Random</string>
+    <string name="accept">ACCEPT</string>
+
+    //Category class
+    <string name="thai_txt">THAI</string>
+    <string name="japanese_txt">JAPANESE</string>
+    <string name="chinese_txt">CHINESE</string>
+    <string name="korean_txt">KOREAN</string>
+    <string name="western_txt">WESTERN</string>
+    <string name="indian_txt">INDIAN</string>
+    <string name="drink_txt">DRINK</string>
+    <string name="dessert_txt">DESSERT</string>
+
+</resources>
