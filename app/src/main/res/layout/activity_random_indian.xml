@@ -103,7 +103,7 @@
             android:id="@+id/yes_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/yes"
+            android:text="@string/accept"
             android:backgroundTint="@color/yes"
             android:layout_marginStart="8dp"/>
     </LinearLayout>

@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:text="CATEGORY"
+        android:text="@string/category_txt"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textSize="30dp"

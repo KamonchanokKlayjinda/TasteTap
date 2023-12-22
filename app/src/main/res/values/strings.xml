@@ -34,8 +34,7 @@
     //Random page
     <string name="TasteTap">TasteTap</string>
     <string name="app_random_button">Random</string>
-    <string name="yes">YES</string>
-    <string name="no">NO</string>
+    <string name="accept">ACCEPT</string>
 
     //Category class
     <string name="thai_txt">THAI</string>

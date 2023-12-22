@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">TasteTap</string>
+
+    //Toolbar
+    <string name="all_tool">รวมทุกหมวดหมู่</string>
+    <string name="thai_tool">อาหารไทย</string>
+    <string name="japanese_tool">อาหารญี่ปุ่น</string>
+    <string name="korean_tool">อาหารเกาหลี</string>
+    <string name="chinese_tool">อาหารจีน</string>
+    <string name="indian_tool">อาหารอินเดีย</string>
+    <string name="western_tool">อาหารตะวันตก</string>
+    <string name="drink_tool">เครื่องดื่ม</string>
+    <string name="dessert_tool">ของหวาน</string>
+    <string name="history_tool">ประวัติ</string>
+
+    //History
+    <string name="reset">รีเซต</string>
+    <string name="history_name">ประวัติ TasteTap</string>
+    <string name="cal">kCal</string>
+
+    //Column
+    <string name="row_time">TIME</string>
+    <string name="row_name">NAME</string>
+    <string name="row_id">ID</string>
+    <string name="row_cal">CALORIES</string>
+    <string name="row_category">CATEGORY</string>
+
+    //Main class
+    <string name="choose_random">เลือกรูปแบบการสุ่ม</string>
+    <string name="all_txt">รวมทุกหมวดหมู่</string>
+    <string name="category_txt">หมวดหมู่</string>
+    <string name="history_txt">ประวัติ</string>
+
+    //Random page
+    <string name="TasteTap">TasteTap</string>
+    <string name="app_random_button">สุ่มอาหาร</string>
+    <string name="accept">รับ</string>
+
+    //Category class
+    <string name="thai_txt">ไทย</string>
+    <string name="japanese_txt">ญี่ปุ่น</string>
+    <string name="chinese_txt">จีน</string>
+    <string name="korean_txt">เกาหลี</string>
+    <string name="western_txt">ตะวันตก</string>
+    <string name="indian_txt">อินเดีย</string>
+    <string name="drink_txt">เครื่องดื่ม</string>
+    <string name="dessert_txt">ของหวาน</string>
+
+</resources>
